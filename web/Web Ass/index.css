@@ -1,0 +1,81 @@
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+}
+.shownav {
+    height: 0.8em;
+    width: 1.25em;
+    display: block;
+     border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+     border-radius: 0.1em;
+    
+}
+.shownav:before {
+ content: '';
+ position: absolute;
+ width: 1.25em;
+ margin-top: 0.3em;
+ border-top: 0.2em solid #fff;
+}
+
+#clicked .on {display: block}
+#clicked .off {display: none}
+
+#clicked:target .on {display: none}
+#clicked:target .off {display: block}
+
+#clicked:target nav {display: block}
+
+nav {
+    display: block; 
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+   }
+   
+header {
+        background-color: blue;
+        color: white;
+        padding: 20px;
+        grid-area: header;
+        display: grid;
+    
+    }
+    
+nav {
+        display: none; 
+        background-color: yellow;
+        grid-area: nav
+        
+}
+
+main {
+    background-color: darkblue;
+    color: white;
+    grid-area: main;
+}
+
+aside {
+    background-color: lightgreen;
+    grid-area: aside;
+}
+
+footer {
+    background-color: darkgreen;
+    color: white;
+    grid-area: footer;
+}
+
+
+
