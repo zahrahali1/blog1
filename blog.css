@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 20px;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+nav{
+    background-color: darkolivegreen;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0;
+}
+nav ul li a{
+    color: white;
+    font-size: 1rem;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    color: #bfca1d;
+    transition: 0.5s;
+}
+
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.row{
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.container .row{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+}
+img{
+    background-image: url("C:\Users\zahrah\OneDrive\web\Web Ass\images\bimg.jpg.webp");
+    flex: 1;
+    margin: 50px 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0,1);
+    width: 40%;
+    height: 50%;
+}
